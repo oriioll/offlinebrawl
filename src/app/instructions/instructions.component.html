@@ -1,0 +1,71 @@
+<!-- Elimina todo el DOCTYPE, html, head y body -->
+<header>
+    <img
+      style="height: 100px"
+      src="https://i.ibb.co/Z1csNLtJ/starrdrop.png"
+      alt="Starr drop"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <nav>
+      <ul>
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+        <li>
+          <a routerLink="/instructions" routerLinkActive="active">How to play</a>
+        </li>
+        <li><a routerLink="/play" routerLinkActive="active">Play Now!</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>How to play the game?</h1>
+      <br />
+      <div class="instructions-container">
+        <!-- Paso 1 -->
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>AI Random Pick</h3>
+        
+          <p>
+            The AI will randomly select an <strong>opponent Brawler</strong>. 
+            Consider their <span class="highlight">win rate</span> and play style to beat the AI!
+          </p>
+        </div>
+      
+        <!-- Paso 2 -->
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Choose Your Brawler</h3>
+          <p>
+           Choose between the <strong>best Brawlers</strong>. 
+            <span class="wrong">Choose carefully to beat the AI</span>
+          </p>
+        </div>
+      
+        <!-- Paso 3 -->
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Clash of Stats</h3>
+          <p>
+            The system compares <strong>win rates</strong> of both Brawlers. 
+            Higher win rate = <span class="highlight">VICTORY!</span>
+          </p>
+        </div>
+      </div>
+  
+      <div class="buttons">
+        <a class="link" routerLink="/register" routerLinkActive="active"
+          >Choose my username</a
+        >
+        <a class="link" routerLink="/play" routerLinkActive="active">Play Now!</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+      <p>© 2025 Offline Brawl - <a href="https://linktr.ee/oriioll__">&#64;oriioll</a> </p>
+  </footer>
+  

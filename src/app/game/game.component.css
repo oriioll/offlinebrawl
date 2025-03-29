@@ -1,0 +1,329 @@
+header {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(135deg, #3a6bff 0%, #7b4bfe 100%);
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.7rem;
+  box-shadow: 0 10px 25px rgba(58, 107, 255, 0.3),
+    0 -2px 5px rgba(255, 215, 0, 0.2);
+  backdrop-filter: blur(10px); /* Efecto vidrio */
+}
+
+nav {
+  margin-left: auto; /* Empuja el nav a la derecha */
+  align-content: center;
+  justify-content: space-between;
+  min-height: auto;
+  text-decoration: none;
+  padding-right: 12%;
+}
+
+nav ul {
+  display: flex;
+  text-decoration: none;
+  align-items: content;
+  gap: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  padding-left: 20px;
+}
+nav a {
+  color: #ffd700 !important; /* Amarillo brillante */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Elimina el subrayado */
+}
+nav a:hover {
+  color: white !important;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+nav a:hover::after {
+  width: 100%;
+}
+main {
+  background: radial-gradient(circle at 0% 100%, #3a6bff 0%, transparent 60%),
+    radial-gradient(circle at 100% 0%, #ff3e3e 0%, transparent 60%), #1e1a2f;
+    
+  color: #ffd700; /* Texto amarillo dorado */
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.7rem;
+}
+h1 {
+  color: #00ffa3;
+  font-size: 3rem;
+}
+h2 {
+  color: #ffffff;
+  font-size: 4rem;
+}
+.logo {
+  transform: translateY(-4px);
+  transition: all 0.1s ease;
+}
+section {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  justify-content: space-around; /* Alineación vertical de los elementos */
+  align-items: center; /* Alineación horizontal de los elementos */
+  width: 100%;
+  min-height: 80vh;
+  max-height: 80vh;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 50px;
+  text-decoration: none;
+}
+
+.link {
+  padding: 15px;
+  background: linear-gradient(
+    to right,
+    #3a6bff,
+    #a34bfe
+  ); /* Degradado azul-morado */
+  color: white;
+  border: none;
+  font-family: "Lilita One", cursive;
+  border-radius: 30px; /* Bordes muy redondeados */
+}
+
+section a {
+  text-decoration: none; /* Elimina el subrayado */
+}
+.link:hover {
+  transform: translateY(-1px);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    to right,
+    #ff3e3e,
+    #ffd700
+  ); /* Degradado rojo-amarillo al hover */
+  transition: all 0.3s ease;
+}
+
+.link:active {
+  transform: translateY(1px);
+}
+
+footer {
+  width: 100%;
+  height: 9.2vh;
+  display: flex;
+
+  background: #1e1a2f;
+  box-shadow: 0 -5px 20px rgba(58, 107, 255, 0.3); /* Sombra azul */
+
+  backdrop-filter: blur(10px); /* Efecto vidrio */
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  color: #ffd700; /* Texto amarillo dorado */
+}
+
+footer a {
+  color: #ffd700 !important; /* Amarillo brillante */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Elimina el subrayado */
+}
+footer a:hover {
+  color: white !important;
+}
+
+footer a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s; /* Elimina el subrayado */
+}
+
+.fight {
+  display: flex;
+  height: 40vh;
+  width: 60vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.aiBrawler {
+  height: 70%;
+  width: 40%;
+  border-radius: 10%;
+}
+.userBrawler {
+  height: 70%;
+  width: 40%;
+  border-radius: 10%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.aiChoice {
+  max-height: 100%;
+  min-height: 100%;
+  width: 40vh;
+  background-color: #ff3e3e;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+
+  align-items: center;
+}
+
+.userChoice {
+  width: 40vh;
+  min-height: 100%;
+  max-height: 100%;
+  background-color: #3eb5ff;
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.main-container h2 {
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+input {
+  border-radius: 10px;
+  width: 80%;
+  border: 3px solid #3a6bff;
+  background: linear-gradient(135deg, #2a2344 0%, #1e1a2f 100%);
+  outline: none; /* Elimina el borde predeterminado */
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Lilita One", sans-serif;
+  color: #ffd700 !important; /* Amarillo brillante */
+}
+
+input::placeholder {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Lilita One", sans-serif;
+}
+input:active {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Lilita One", sans-serif;
+}
+
+input:focus {
+  outline: none; /* Elimina el borde predeterminado */
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: "Lilita One", sans-serif;
+  color: #ffd700 !important; /* Amarillo brillante */
+}
+
+.choiceBtns {
+  width: 80%;
+  padding: 10px;
+  background: linear-gradient(
+    to right,
+    #3a6bff,
+    #a34bfe
+  ); /* Degradado azul-morado */
+  color: white;
+  border: none;
+  font-family: "Lilita One", cursive;
+  border-radius: 30px; /* Bordes muy redondeados */
+  text-align: center;
+}
+.choiceBtns:hover {
+  transform: translateY(-1px);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    to right,
+    #ff3e3e,
+    #ffd700
+  ); /* Degradado rojo-amarillo al hover */
+  transition: all 0.3s ease;
+}
+
+.brawlerImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  border: 3px solid #ffffff;
+  margin-top: 20%;
+    box-shadow: 
+      0 0 0 2px rgba(255, 255, 255, 0.8), /* Borde blanco sólido interior */
+      0 0 10px 4px rgba(255, 255, 255, 0.5), /* Glow exterior blanco */
+      0 0 20px 6px rgba(255, 255, 255, 0.3); /* Sombra difuminada exterior */
+  
+}
+
+button {
+  color: white !important; /* Amarillo brillante */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Elimina el subrayado */
+  background: linear-gradient(to right, #3a6bff, #7b4bfe); /* Degradado azul-morado */
+  border: none;
+  padding: 10px 20px;
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white !important;
+  transform: translateY(-1px);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #ff3e3e, #ffd700); /* Degradado rojo-amarillo al hover */
+  transition: all 0.3s ease;
+  text-decoration: none; /* Asegura que no haya subrayado */
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+button:hover::after {
+  width: 100%;
+}

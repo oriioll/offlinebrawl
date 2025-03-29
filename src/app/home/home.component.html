@@ -1,0 +1,39 @@
+<!-- Elimina todo el DOCTYPE, html, head y body -->
+<header>
+  <img
+    style="height: 100px"
+    src="https://i.ibb.co/Z1csNLtJ/starrdrop.png"
+    alt="Starr drop"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+    rel="stylesheet"
+  />
+  <nav>
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+      <li>
+        <a routerLink="/instructions" routerLinkActive="active">How to play</a>
+      </li>
+      <li><a routerLink="/play" routerLinkActive="active">Play Now!</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h1>Offline Brawl - What brawler has a better win-rate?</h1>
+    <br />
+    <h2>Welcome, {{ username }}</h2>
+
+    <div class="buttons">
+      <a class="link" routerLink="/instructions" routerLinkActive="active"
+        >How to play?</a>
+      <a class="link" routerLink="/play" routerLinkActive="active">Play Now!</a>
+    </div>
+    
+  </section>
+</main>
+<footer>
+    <p>© 2025 Offline Brawl - <a href="https://linktr.ee/oriioll__">&#64;oriioll</a> </p>
+</footer>

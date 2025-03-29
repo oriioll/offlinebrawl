@@ -1,0 +1,163 @@
+header {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(135deg, #3a6bff 0%, #7b4bfe 100%);
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.7rem;
+  box-shadow: 0 10px 25px rgba(58, 107, 255, 0.3),
+    0 -2px 5px rgba(255, 215, 0, 0.2);
+  backdrop-filter: blur(10px); /* Efecto vidrio */
+}
+
+  
+  img:hover {
+    transform: translateY(-4px);
+    transition: all 0.1s ease;
+  }
+
+nav {
+  margin-left: auto; /* Empuja el nav a la derecha */
+  align-content: center;
+  justify-content: space-between;
+  min-height: auto;
+  text-decoration: none;
+  padding-right: 12%;
+}
+
+nav ul {
+  display: flex;
+  text-decoration: none;
+  align-items: content;
+  gap: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  padding-left: 20px;
+}
+nav a {
+  color: #ffd700 !important; /* Amarillo brillante */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Elimina el subrayado */
+}
+nav a:hover {
+  color: white !important;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+nav a:hover::after {
+  width: 100%;
+}
+main {
+  background: radial-gradient(circle at 0% 100%, #ff3e3e 0%, transparent 60%),
+    radial-gradient(circle at 100% 0%, #3a6bff 0%, transparent 60%), #1e1a2f;
+
+  color: #ffd700; /* Texto amarillo dorado */
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.7rem;
+}
+h1 {
+  color: #00ffa3;
+  font-size: 4rem;
+}
+h2 {
+  color: #ffffff;
+  font-size: 4rem;
+}
+section {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  justify-content: space-around; /* Alineación vertical de los elementos */
+  align-items: center; /* Alineación horizontal de los elementos */
+  width: 100%;
+  min-height: 80vh;
+  max-height: 80vh;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 50px;
+  text-decoration: none;
+}
+
+.link {
+  padding: 15px;
+  background: linear-gradient(
+    to right,
+    #3a6bff,
+    #a34bfe
+  ); /* Degradado azul-morado */
+  color: white;
+  border: none;
+  font-family: "Lilita One", cursive;
+  border-radius: 30px; /* Bordes muy redondeados */
+}
+
+section a {
+  text-decoration: none; /* Elimina el subrayado */
+}
+.link:hover {
+  transform: translateY(-1px);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    to right,
+    #ff3e3e,
+    #ffd700
+  ); /* Degradado rojo-amarillo al hover */
+  transition: all 0.3s ease;
+}
+
+.link:active {
+  transform: translateY(1px);
+}
+
+footer {
+  width: 100%;
+  height: 9.2vh;
+  display: flex;
+
+  background: #1e1a2f;
+  box-shadow: 0 -5px 20px rgba(58, 107, 255, 0.3); /* Sombra azul */
+
+  backdrop-filter: blur(10px); /* Efecto vidrio */
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  color: #ffd700; /* Texto amarillo dorado */
+}
+
+footer a {
+  color: #ffd700 !important; /* Amarillo brillante */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Elimina el subrayado */
+}
+footer a:hover {
+  color: white !important;
+}
+
+footer a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s; /* Elimina el subrayado */
+}

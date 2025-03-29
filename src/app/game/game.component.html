@@ -1,0 +1,154 @@
+<!-- Elimina todo el DOCTYPE, html, head y body -->
+<header>
+  <img class="logo"
+    style="height: 100px"
+    src="https://i.ibb.co/Z1csNLtJ/starrdrop.png"
+    alt="Starr drop"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+    rel="stylesheet"
+  />
+  <nav>
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+      <li>
+        <a routerLink="/instructions" routerLinkActive="active">How to play</a>
+      </li>
+      <li><a routerLink="/play" routerLinkActive="active">Play Now!</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h1 style="padding: 10px;">Choose your brawler and click play!</h1>
+    <div class="main-container">
+      <div class="userChoice">
+        <h2>Your brawler</h2>
+        <img *ngIf="views.showSelection" style="height: 120px;" 
+        [src]="baseImageUrl + userSelection.image" 
+        alt="Your brawler">
+   
+        <datalist id="brawlers">
+          <option value="Finx">Finx (Mythic)</option>
+          <option value="Ollie">Ollie (Mythic)</option>
+          <option value="Meeple">Meeple (Epic)</option>
+          <option value="Juju">Juju (Mythic)</option>
+          <option value="Shade">Shade (Epic)</option>
+          <option value="Kenji">Kenji (Legendary)</option>
+          <option value="Moe">Moe (Mythic)</option>
+          <option value="Clancy">Clancy (Mythic)</option>
+          <option value="Berry">Berry (Epic)</option>
+          <option value="Lily">Lily (Mythic)</option>
+          <option value="Draco">Draco (Legendary)</option>
+          <option value="Angelo">Angelo (Epic)</option>
+          <option value="Melodie">Melodie (Mythic)</option>
+          <option value="Larry & Lawrie">Larry & Lawrie (Epic)</option>
+          <option value="Kit">Kit (Legendary)</option>
+          <option value="Mico">Mico (Mythic)</option>
+          <option value="Charlie">Charlie (Mythic)</option>
+          <option value="Chuck">Chuck (Mythic)</option>
+          <option value="Pearl">Pearl (Epic)</option>
+          <option value="Doug">Doug (Mythic)</option>
+          <option value="Cordelius">Cordelius (Legendary)</option>
+          <option value="Hank">Hank (Epic)</option>
+          <option value="Maisie">Maisie (Epic)</option>
+          <option value="Willow">Willow (Mythic)</option>
+          <option value="R-T">R-T (Mythic)</option>
+          <option value="Mandy">Mandy (Epic)</option>
+          <option value="Gray">Gray (Mythic)</option>
+          <option value="Chester">Chester (Legendary)</option>
+          <option value="Buster">Buster (Mythic)</option>
+          <option value="Gus">Gus (Super Rare)</option>
+          <option value="Sam">Sam (Epic)</option>
+          <option value="Otis">Otis (Mythic)</option>
+          <option value="Bonnie">Bonnie (Epic)</option>
+          <option value="Janet">Janet (Mythic)</option>
+          <option value="Eve">Eve (Mythic)</option>
+          <option value="Fang">Fang (Mythic)</option>
+          <option value="Lola">Lola (Epic)</option>
+          <option value="Meg">Meg (Legendary)</option>
+          <option value="Ash">Ash (Epic)</option>
+          <option value="Griff">Griff (Epic)</option>
+          <option value="Buzz">Buzz (Mythic)</option>
+          <option value="Grom">Grom (Epic)</option>
+          <option value="Squeak">Squeak (Mythic)</option>
+          <option value="Belle">Belle (Epic)</option>
+          <option value="Stu">Stu (Epic)</option>
+          <option value="Ruffs">Ruffs (Mythic)</option>
+          <option value="Edgar">Edgar (Epic)</option>
+          <option value="Byron">Byron (Mythic)</option>
+          <option value="Lou">Lou (Mythic)</option>
+          <option value="Amber">Amber (Legendary)</option>
+          <option value="Colette">Colette (Epic)</option>
+          <option value="Surge">Surge (Legendary)</option>
+          <option value="Sprout">Sprout (Mythic)</option>
+          <option value="Nani">Nani (Epic)</option>
+          <option value="Gale">Gale (Epic)</option>
+          <option value="Jacky">Jacky (Super Rare)</option>
+          <option value="Max">Max (Mythic)</option>
+          <option value="Mr. P">Mr. P (Mythic)</option>
+          <option value="Emz">Emz (Epic)</option>
+          <option value="Bea">Bea (Epic)</option>
+          <option value="Sandy">Sandy (Legendary)</option>
+          <option value="8-Bit">8-Bit (Super Rare)</option>
+          <option value="Bibi">Bibi (Epic)</option>
+          <option value="Carl">Carl (Super Rare)</option>
+          <option value="Rosa">Rosa (Rare)</option>
+          <option value="Leon">Leon (Legendary)</option>
+          <option value="Tick">Tick (Super Rare)</option>
+          <option value="Gene">Gene (Mythic)</option>
+          <option value="Frank">Frank (Epic)</option>
+          <option value="Penny">Penny (Super Rare)</option>
+          <option value="Darryl">Darryl (Super Rare)</option>
+          <option value="Tara">Tara (Mythic)</option>
+          <option value="Pam">Pam (Epic)</option>
+          <option value="Piper">Piper (Epic)</option>
+          <option value="Bo">Bo (Epic)</option>
+          <option value="Poco">Poco (Rare)</option>
+          <option value="Crow">Crow (Legendary)</option>
+          <option value="Mortis">Mortis (Mythic)</option>
+          <option value="El Primo">El Primo (Rare)</option>
+          <option value="Dynamike">Dynamike (Super Rare)</option>
+          <option value="Nita">Nita (Rare)</option>
+          <option value="Jessie">Jessie (Super Rare)</option>
+          <option value="Barley">Barley (Rare)</option>
+          <option value="Spike">Spike (Legendary)</option>
+          <option value="Rico">Rico (Super Rare)</option>
+          <option value="Brock">Brock (Rare)</option>
+          <option value="Bull">Bull (Rare)</option>
+          <option value="Colt">Colt (Rare)</option>
+          <option value="Shelly">Shelly (Common)</option>
+        </datalist>
+        <input list="brawlers" placeholder="Select a brawler..." (input)="onUserSelect($event)">
+        <button (click)="playNow()" [disabled]="!userSelection.name">Play Now!</button>
+      </div>
+      <div class="fight">
+        <div class="userBrawler">
+          <img class="brawlerImg" [src]="baseImageUrl + userSelection.image" alt="Your brawler">
+
+        </div>
+        <p class="vs">VS</p>
+        <div class="aiBrawler">
+          <img class="brawlerImg" [src]="baseImageUrl + aiBrawlers.current" alt="AI brawler">
+        </div>
+      </div>
+      <div class="aiChoice">
+        <h2 style="padding-top: 7%; padding-bottom: 10%;">AI election</h2>
+        <img style="border-radius: 40px; max-height: 200px;" [src]="baseImageUrl + aiBrawlers.next" alt="Next AI Brawler">
+      </div>
+      
+    </div>
+    <p style="font-size: 3rem;">Winner: {{winner}} </p>
+    <div class="buttons">
+      <a class="link" routerLink="/play" routerLinkActive="active">Go home!</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>
+    © 2025 Offline Brawl -
+    <a href="https://linktr.ee/oriioll__">&#64;oriioll</a>
+  </p>
+</footer>
